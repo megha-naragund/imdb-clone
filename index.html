@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mini IMDB clone</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div id="conatiner" class="container main-container " >
+      <!-- Navbar  -->
+      <nav class=" navbar navbar-fixed-top navbar-inverse  ">
+        <a class="navbar-brand" href="#">Ninja Movie Catlog</a>
+        <ul class="nav navbar-nav ">
+          <!-- Movies list==> home Favourite movies==> favourite -->
+          <li id="home"><button class='btn' type='submit'>Home</button></li>
+          <li id="favt"><button class='btn' type='submit'>Favourites</button></li>
+        </ul>
+        <!-- form tosearch the movies  -->
+        <form id="searchForm" class="navbar-form navbar-left" action="/action_page.php">
+          <div class="input-group">
+            <input id="searchMovie" type="text" class="form-control" autocomplete="off" placeholder="Search Movies..." />
+            <div id="autocompleteList" ></div>
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>  
+            </div>
+          </div>
+        </form>
+
+      </nav>
+     
+     
+    <div id="movieContainer">
+      <div id="main"></div>
+      <div id="favouriteMovies"></div>
+      <div id="moreInfomation">
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+
+  </body>
+</html>
