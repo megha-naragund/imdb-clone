@@ -118,7 +118,7 @@ function render(results, page) {
     cardBody.appendChild(cardContainer);
     page.appendChild(cardBody);
   }
-  exampleFunction();
+  eventListnerFunction();
 }
 
 //  search api
@@ -182,7 +182,7 @@ function autocomplete(value, movieslist) {
   console.log(autocompleteList);
 }
 // event lister on each favt button and poster image for more details abt the movie
-function exampleFunction() {
+function eventListnerFunction() {
   // Function to be executed
   let favtButton = []; // to add eventlistner for each favt button on each card
   let favouriteMoviesName = []; // to keep track of favt movies
